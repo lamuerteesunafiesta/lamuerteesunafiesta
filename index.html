@@ -1,156 +1,43 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>La Muerte es una Fiesta</title>
+  <meta name="description" content="Exposición de Daniel Bagnara Mena sobre cómo serán los rituales de la muerte en el futuro. Dos estructuras autómatas activan un espacio donde cuerpo, movimiento, tecnología e indumentaria construyen una experiencia programada.">
+  <meta name="theme-color" content="#625c57">
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+  <!-- Vista previa al compartir el enlace (WhatsApp, Instagram, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="La Muerte es una Fiesta">
+  <meta property="og:description" content="¿Cómo serán los rituales de la muerte en el futuro? Exposición de Daniel Bagnara Mena · 2026.">
+  <meta property="og:url" content="https://lamuerteesunafiesta.github.io/lamuerteesunafiesta/">
+  <meta property="og:image" content="https://lamuerteesunafiesta.github.io/lamuerteesunafiesta/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="es_CL">
+  <meta name="twitter:card" content="summary_large_image">
 
-    body {
-      margin: 0;
-      background: #f4f1eb;
-      color: #161616;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-    }
+  <!-- Ícono de la pestaña -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23161616'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23f4f1eb'/%3E%3C/svg%3E">
 
-    main {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 60px 24px 80px;
-    }
-
-    header {
-      margin-bottom: 70px;
-    }
-
-    h1 {
-      font-size: clamp(42px, 9vw, 82px);
-      line-height: 0.95;
-      font-weight: 400;
-      letter-spacing: -0.04em;
-      margin: 0 0 24px;
-    }
-
-    .subtitle {
-      font-size: clamp(20px, 4vw, 28px);
-      line-height: 1.2;
-      margin: 0;
-      max-width: 650px;
-    }
-
-    .instagram {
-      display: inline-block;
-      margin-top: 22px;
-      color: #161616;
-      text-decoration: none;
-      font-size: 14px;
-      letter-spacing: 0.05em;
-      border-bottom: 1px solid #161616;
-      padding-bottom: 3px;
-    }
-
-    .instagram:hover {
-      opacity: 0.6;
-    }
-
-    .language {
-      display: inline-block;
-      margin-top: 30px;
-      font-size: 12px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      border-bottom: 1px solid #161616;
-      padding-bottom: 4px;
-    }
-
-    section {
-      margin-bottom: 65px;
-    }
-
-    h2 {
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      margin: 0 0 22px;
-    }
-
-    p {
-      font-size: 18px;
-      margin: 0 0 24px;
-    }
-
-    .artist {
-      border-top: 1px solid #161616;
-      padding-top: 28px;
-    }
-
-    .team {
-      border-top: 1px solid #161616;
-      padding-top: 28px;
-    }
-
-    .team p {
-      margin-bottom: 8px;
-    }
-
-    .team a {
-      color: #161616;
-      text-decoration: none;
-      border-bottom: 1px solid #161616;
-    }
-
-    .team a:hover {
-      opacity: 0.6;
-    }
-
-    .english {
-      border-top: 1px solid #161616;
-      padding-top: 60px;
-    }
-
-    footer {
-      border-top: 1px solid #161616;
-      padding-top: 25px;
-      margin-top: 80px;
-      font-size: 13px;
-      line-height: 1.5;
-    }
-
-    @media (max-width: 600px) {
-      main {
-        padding: 40px 20px 60px;
-      }
-
-      header {
-        margin-bottom: 55px;
-      }
-
-      p {
-        font-size: 17px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
 
   <main>
 
     <header>
 
-      <h1>La Muerte es una Fiesta</h1>
+      <h1 class="titulo-principal">
+        <img src="img/logoproyecto.jpeg" alt="La Muerte es una Fiesta">
+      </h1>
 
       <p class="subtitle">
         ¿Cómo serán los rituales de la muerte en el futuro?
       </p>
+      <span class="language">Exposición · 2026</span>
+
 
       <a class="instagram"
          href="https://www.instagram.com/danielbagnaramena"
@@ -159,14 +46,12 @@
         @danielbagnaramena
       </a>
 
-      <span class="language">Exposición · 2026</span>
-
     </header>
 
 
-    <section>
+    <section class="laobra">
 
-      <h2>La obra</h2>
+      <h2>La Obra</h2>
 
       <p>
         La muerte es una fiesta surge de una investigación desarrollada entre Chile y México sobre los ritos y las formas de celebración de la muerte. Dos estructuras autómatas activan un espacio en el que cuerpo, movimiento, tecnología e indumentaria se relacionan para construir una experiencia programada.
@@ -179,9 +64,31 @@
 
       <h2>Artista</h2>
 
+      <img class="artist-photo" src="img/danielartista.jpg" alt="Retrato de Daniel Bagnara Mena">
+
       <p>
         <strong>Daniel Bagnara Mena</strong>, artista visual, diseñador escénico y docente, desarrolla una práctica que cruza las artes visuales y escénicas a partir del cuerpo, la materialidad, el textil y el territorio. Su investigación explora las relaciones y transformaciones entre cuerpo y materia, articulando procesos de experimentación, diseño y construcción escénica.
       </p>
+
+    </section>
+
+    <section class="entrevistas">
+
+      <h2>Entrevistas</h2>
+
+      <p>
+        <strong>Radio Uniacc</strong>
+      </p>
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/_kjFrhFYuZ0"
+          title="Entrevista a Daniel Bagnara Mena en Radio Uniacc"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </div>
 
     </section>
 
@@ -241,7 +148,7 @@
     </section>
 
 
-    <section class="english">
+    <section class="english" lang="en">
 
       <h2>English</h2>
 
@@ -254,7 +161,7 @@
       </p>
 
       <p>
-        <strong>Daniel Bagnara Mena</strong> is a visual artist, scenic designer, and educator whose practice bridges the visual and performing arts through the body, materiality, textiles, and territory. His work explores the relationships and transformations between body and matter, bringing together processes of experimentation, design, and scenic construction.
+        <strong>Daniel Bagnara Mena,</strong> is a visual artist, scenic designer, and educator whose practice bridges the visual and performing arts through the body, materiality, textiles, and territory. His work explores the relationships and transformations between body and matter, bringing together processes of experimentation, design, and scenic construction.
       </p>
 
     </section>
@@ -262,7 +169,7 @@
 
     <footer>
 
-      La Muerte es una Fiesta · Daniel Bagnara Mena · 2026
+      La Muerte Es Una Fiesta · Daniel Bagnara Mena · 2026
 
     </footer>
 
@@ -270,4 +177,3 @@
 
 </body>
 </html>
-```
