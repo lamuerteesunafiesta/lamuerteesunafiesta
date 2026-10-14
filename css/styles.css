@@ -53,6 +53,7 @@ header {
 }
 
 .subtitle {
+  font-family: "Playfair Display", 'Georgia', serif;
   font-size: clamp(20px, 4vw, 28px);
   line-height: 1.2;
   margin: 0;
@@ -77,7 +78,8 @@ header {
 .language {
   display: block;
   width: fit-content;
-  margin-top: 30px;
+  margin: 30px auto 0;
+  text-align: center;
   font-size: 12px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -110,6 +112,7 @@ p {
 .artist,
 .team,
 .english,
+.prensa,
 footer {
   padding: 28px;
   background: rgba(244, 241, 235, 0.88);
@@ -128,13 +131,36 @@ footer {
   margin: 0 auto 22px;
 }
 
-.team p {
+.team p,
+.instagram {
   margin-bottom: 10px;
 }
 
-.team a {
+.team {
+  text-align: center;
+}
+
+.team p {
+  margin: 0 0 14px;
+  text-align: center;
+  position: relative;
+}
+
+.team p:not(:last-child)::after {
+  content: "-";
+  display: block;
+  margin-top: 10px;
+  color: #625c57;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.team a,
+.instagram {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   max-width: 100%;
   min-height: 42px;
   padding: 8px 14px;
@@ -145,9 +171,12 @@ footer {
   border-radius: 4px;
   text-decoration: none;
   overflow-wrap: anywhere;
+  text-align: center;
+  width: min(100%, 360px);
 }
 
-.team a::before {
+.team a::before,
+.instagram::before {
   content: "";
   display: inline-block;
   flex: 0 0 18px;
@@ -157,7 +186,8 @@ footer {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23161616' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='3' width='18' height='18' rx='5'/%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Ccircle cx='17.5' cy='6.5' r='1' fill='%23161616'/%3E%3C/svg%3E") center / contain no-repeat;
 }
 
-.team a:hover {
+.team a:hover,
+.instagram:hover {
   background: #c7d4ba;
 }
 
@@ -211,6 +241,7 @@ footer {
   .artist,
   .team,
   .english,
+  .prensa,
   footer {
     padding: 20px;
   }
