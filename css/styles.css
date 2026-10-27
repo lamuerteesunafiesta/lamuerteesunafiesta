@@ -131,6 +131,21 @@ footer {
   margin: 0 auto 22px;
 }
 
+.img-prensa {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 18px;
+}
+
+.prensa-divider {
+  width: 100%;
+  margin: 28px auto;
+  border: 0;
+  border-top: 1px solid #161616;
+}
+
 .team p,
 .instagram {
   margin-bottom: 10px;
